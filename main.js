@@ -19,20 +19,20 @@ botonBuscarEstudiante.addEventListener("click", async () => {
       `http://localhost:8080/estudiantes/${Id.value}`
           );
     // leer datos de la BD
-   nombre.innerHTML = response.data["nombre"];
-   identidad.innerHTML = response.data["identidad"];
-   programa.innerHTML = response.data["programa"];
-   semestre.innerHTML = response.data["semestre"];
-   situacion.innerHTML = response.data["situacion"];
-   creditos.innerHTML = response.data["creditos"];
-   nivel.innerHTML = response.data["nivel"];
-  console.log(typeof(nombre.value))
+    nombre.innerHTML = response.data["nombre"];
+    identidad.innerHTML = response.data["identidad"];
+    programa.innerHTML = response.data["programa"];
+    semestre.innerHTML = response.data["semestre"];
+    situacion.innerHTML = response.data["situacion"];
+    creditos.innerHTML = response.data["creditos"];
+    nivel.innerHTML = response.data["nivel"];
+    console.log(typeof(nombre.value))
 
+    window.alert("Se cargarón correctamente los datos del estudiante ") 
   } catch (error) {
      // Manejo de errores   
-     window.alert("Error al buscar el el estudiante, es posible que ese Id no exista") 
+     window.alert("Error al buscar el estudiante, es posible que ese Id no exista") 
   }
-  window.alert("Se cargaron correctamente los datos del estudiante ") 
 });
 
 // Para realizar la solicitud de tipo Post
@@ -65,12 +65,11 @@ botonCrearEstudiante.addEventListener("click", async () => {
  const response = await axios.post(
     `http://localhost:8080/estudiantes`,estudianteEnv
         );
-
+        window.alert("Los datos del estudiante fueron almacenados correctamente") 
 } catch (error) {
    // Manejo de errores 
    window.alert("Error al crear al registar el nuevo estudiante, intente de nuevo por favor") 
 }
-  window.alert("Los datos del estudiante fueron almacenados correctamente") 
 });
 
 // Para realizar la solicitud de tipo Delate
@@ -81,11 +80,9 @@ botonEliminarEstudiante.addEventListener("click", async () => {
     `http://localhost:8080/estudiantes/${Id.value}`
         );
         console.log("si esta eliminando a un estudiante")
-        window.alert("se elimino al estudiante") 
-  
+        window.alert("Se elimino al estudiante de la base de datos correctamente") 
   } catch (error) {
    // Manejo de errores  
-   window.alert("Error al eliminar eliminar al estudiante, es posible que el id no se el correcto") 
+   window.alert("Error al eliminar al estudiante, es posible que el id no se el correcto") 
 }
-window.alert("Se elimino al estudiante de la base de datos correctamente") 
 });
