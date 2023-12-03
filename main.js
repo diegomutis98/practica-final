@@ -1,5 +1,5 @@
 const botonBuscarEstudiante = document.querySelector(".search button");
-const Id = document.querySelector(".search input");
+const Id = document.querySelector("input");
 const nombre = document.querySelector(".nombreRes");
 const identidad = document.querySelector(".identidadRes");
 const programa = document.querySelector(".programaRes");

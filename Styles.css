@@ -1,0 +1,78 @@
+.leer-datos{
+    display: flex;
+    flex-direction:row;
+    background-color: rgb(134, 245, 152);
+    height: auto;
+    width: 800px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+}
+.leer-datos ul{
+    list-style: none;
+}
+
+button{
+    height: 60px;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+menu input{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: azure;
+}
+menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.ingresar-datos ul{
+    list-style: none;
+}
+
+.ingresar-datos input{
+    width: 400px;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: azure;
+}
+p{
+    margin: 0px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+h3{
+    margin: 0px;
+    font-weight: bolder;
+}
+
+.leer-datos ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
