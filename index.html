@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="español">
+    <head>
+        <meta charset="utf-8" name="author" content="Diego Andres Mutis Muñoz"/>
+        <title>My API Res</title>     
+        <link rel="stylesheet" type="text/css" href="Styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        </head>
+  <body>
+    <Main>
+        <header>
+            <h1> Base de datos para una Contancia de matricula </h1>
+        </header>
+    <menu>
+        <div class="search">
+            <input type="text" placeholder=" ingrese Id" spellcheck="false">
+            <button><p > Buscar </p>  </button>
+        </div>
+        <div class="crear">
+            <button><p> Crear </p> </button>    
+        </div> 
+        <div class="modificar">
+            <button><p> Modificar </p> </button>    
+        </div> 
+        <div class="eliminar">
+            <button><p> Eliminar </p> </button>    
+        </div> 
+    </menu>    
+    </div>  
+    <div  class=" ingresar-datos">
+        <ul>
+            <li>   <a> Nombre de usuario: </a> <input id="usuarioEnv" type="text" placeholder=" nombre de usuario" spellcheck="false"></a> </li>
+            <li>   <a> Estudiante: </a> <input id="nombreEnv" type="text" placeholder=" nombre del estudiante" spellcheck="false"></a> </li>      
+            <li>   <a> Documento de identidad: </a> <input id="identidadEnv"  type="text" placeholder=" identidad" spellcheck="false"></a> </li>
+            <li>   <a> Programa: </a> <input id="programaEnv" type="text" placeholder=" programa" spellcheck="false"></a> </li>
+            <li>   <a> Semestre: </a> <input id="semestreEnv"  type="text" placeholder=" Semestre" spellcheck="false"></a> </li>
+            <li>   <a> Situación académica: </a> <input id="situacionEnv" type="text" placeholder=" Situación académica" spellcheck="false"></a> </li>
+            <li>   <a> Créditos acumulados: </a> <input id="creditosEnv" type="text" placeholder=" Créditos acumulados" spellcheck="false"></a> </li>
+            <li>   <a> Nivel: </a> <input id="nivelEnv" type="text" placeholder=" Nivel" spellcheck="false"></a> </li>        
+        </ul> 
+        </div>
+        <div class="leer-datos">
+            <ul>
+                <li>   <h3>  Estudiante:  </h3><p class= "nombreRes"> </p> </li>    
+                <li>   <h3>  Documento de identidad:  </h3><p class= "identidadRes"> </p> </li>
+                <li>   <h3>  Programa:  </h3><p class= "programaRes"> </p> </li>
+                <li>   <h3>  Semestre:  </h1><p class= "semestreRes"> </p> </li>
+                <li>   <h3>  Situación académica:  </h3><p class= "situacionRes"> </p> </li>
+                <li>   <h3>  Créditos acumulados:  </h3><p class= "creditosRes"> </p> </li>
+                <li>   <h3>  Nivel:  </h3><p class= "nivelRes"> </p> </li>       
+            </ul> 
+            </div>             
+
+<footer>
+    <br>
+    <em><b>Diego Andres Mutis Muñoz, Mateo Hoyos Mesa, Daniel Felipe Meneses Rojas </b></em>
+</footer>
+    </main>
+    <script src="main.js" defer></script>
+</body>
